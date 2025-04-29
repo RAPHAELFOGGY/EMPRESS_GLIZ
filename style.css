@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /* width: 100px; */
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(makey.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 1330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 20px #000;
+
+    
+}
+
+.img{
+    display: flex;
+    height: 300px;
+    width: fit-content;
+    align-content: center;
+    gap: 5px;
+    /* margin-left: 250px; */
+   
+    
+}
+.img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    transition: all 0.3s ease-in-out;
+}
+.img img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #000;
+}
+.img img:nth-child(1){
+    border: 3px solid #ff7700;
+}
+.img img:nth-child(2){
+    border: 3px solid #ff7700;
+}
+.img img:nth-child(3){
+    border: 3px solid #ff7700;
+}
+.img img:nth-child(4){
+    border: 3px solid #ff7700;
+}
+
+
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff7700;
+    font-size: 50px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    font-style: italic;
+    margin-top: 50px;
+}
+.logo:hover{
+    color: #fff;
+    font-size: 60px;
+    transition: o.4s ease-in-out;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+    margin-left: 300px;
+}
+
+.text{
+    color: #fff;
+    font-size: 20px;
+    padding-top: 120px;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.src{
+    display: flex;
+    max-width: 1000px;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+    font-style: oblique;
+    margin-top: 5px;
+    margin-left: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.src:hover{
+    color: #ff7700;
+}
+
+/* A mobile view */
+
+@media screen and (max-width: 500px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+        height: 140vh;
+        background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(makey.jpg);
+        background-position: center;    
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        font-size: 50px;
+        margin-top: 40px;
+        color: #ff7700;
+    }
+    .logo:hover{
+        color: #fff;
+        font-size: 10px;
+        transition: o.4s ease-in-out;
+    }
+
+    .text{
+        padding-top: 70px;
+        font-size: 15px;
+        margin-left: 10px;
+        font-weight: bold;
+        color: #fff;
+        font-style: oblique;
+    }
+      
+    /* .menu{
+        width: 200px;
+        float: left;
+        height: 70px;
+        margin-left: 50px;
+    } */
+    /* .text{
+        padding-top: 100px;
+    } */
+
+    .img{
+        display: flex;
+        margin-top: 80px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .src{
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        color: #ff7700;
+        flex-wrap: wrap;
+    }
+      
+}
+@media screen and (max-width: 425px){
+        .container{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(makey.jpg);
+            background-position: center;    
+            background-size: cover;
+        }
+        
+        .logo{
+            font-size: 20px;
+            padding-left: 10px;
+            margin-top: 20px;
+            color: #ff7700;
+
+        
+    
+    
+        }
+          
+        /* .menu{
+            width: 200px;
+            float: left;
+            height: 70px;
+            margin-left: 50px;
+        } */
+        /* .text{
+            padding-top: 100px;
+        } */
+    
+        .img{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 50%;
+            height: 50%;
+            margin-left: 120px;
+            margin-top: 140px;
+            flex-wrap: wrap;
+        }
+    
+        .src{
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+            color: #ff7700;
+            flex-wrap: wrap;
+        }
+}
+   
